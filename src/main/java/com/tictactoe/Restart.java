@@ -10,7 +10,7 @@ import java.io.IOException;
 @WebServlet(name = "restart",value = "/restart")
 public class Restart extends HttpServlet {
 
-
+    //почему-то не работает фукнция restart() мб jquery не подключается
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getSession().invalidate();
         response.sendRedirect("/tic_tac_toe_war/start");
